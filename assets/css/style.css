@@ -394,7 +394,7 @@ html,body{
 	 border: 1px solid #fff;
 }
 .single-slide-item.slide-1 {
-	background-image:url(../../assets/images/banner/banner1.jpg);
+	background-image:url(../../assets/images/fotoauto/ruta.jpg);
 	position:relative;
 	z-index:1;
 }
@@ -753,9 +753,9 @@ a:focus.service-btn{
 .project{
 	padding: 117px 0 109px;
 }
-.project-details{
+/* .project-details{
 	
-}
+} */
 .project-content {
     margin-top:62px;
 }
@@ -1735,11 +1735,11 @@ a:active.learn-btn{
 	-o-transition:all 0.2s linear;
     transition: all 0.2s linear;
 }
-.foot-menu   li a,
+/* .foot-menu   li a,
 .foot-menu   li a:hover,
 .foot-menu   li a:focus{
 	
-}
+} */
 .foot-menu  li {
 	position:relative;
 	padding-left:42px;
@@ -2056,7 +2056,7 @@ a:active.learn-btn{
 	color:#908edf;
 	border:1px solid #908edf;
 }
-/*-blog button-*/\
+/*-blog button-*/
 
 /*pagination*/
 .pagination-part {
