@@ -787,7 +787,9 @@ a:focus.service-btn{
     width:auto;
 }
 .isotope .item {
-	float: left;
+	border: 10px solid red;
+	justify-items: center;
+	/* float: left; */
 	height: 286px;
 	position:relative;
 	overflow:hidden;
