@@ -1757,7 +1757,8 @@ a:active.learn-btn{
 
 .about-part{
 	position:relative;
-	background:url(../../assets/images/about/Planetario.jpg)no-repeat;
+	width: auto;
+	background:url(../../assets/images/about/conduccion.jpg)no-repeat;
 	background-position:center;
 	background-size:cover;
 	padding: 124px 0 144px;
@@ -1792,7 +1793,6 @@ a:active.learn-btn{
 	font-family: 'Playfair Display', serif;
 	margin-bottom: 3px;
 	left: 15px;
-	
 }
 .about-part-content {
     position: relative;
