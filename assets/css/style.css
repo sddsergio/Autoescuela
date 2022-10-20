@@ -646,6 +646,46 @@ html,body{
 	height: 100%;
 	z-index: -1;
 }
+/*------------------------------------- 
+		5.5 Galeria 
+--------------------------------------*/
+	#boton{
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		color: green;
+		background-color: #100010;
+		transition: transform 0.9s ease-in-out;
+	}
+
+	#boton:target{
+		transition: transform 0.9s ease-in-out;
+		transform: translateX(500%);
+	}
+
+	h1{
+		font-weight: 400;
+		text-align: center;
+		padding: 20px 0;
+		font-size: 40px;
+	}
+
+	.linea{
+		background: #550b55;
+		height: 5px;
+		width: 100%;
+		display: block;
+	}
+	
+	.galeria{
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)) ;
+	}
+
+	.galeria img{
+		width: 100%;
+	}
+
 /*-------------------------------------
 		6. Service
 --------------------------------------*/
