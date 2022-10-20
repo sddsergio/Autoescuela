@@ -20,6 +20,7 @@ font-family: 'Lato', sans-serif;
 4.	Slider 336
 4.  We Do 510
 5. 	About 610
+5.5 Galeria 
 6. 	Service 650 
 7. 	Statistics 709
 8. 	Project 752
@@ -680,10 +681,29 @@ html,body{
 	.galeria{
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)) ;
+		width: 95%;
+		margin: auto;
+		grid-gap: 10px;
+	}
+
+	.galeria > a{
+		display: block;
+		position: relative;
+		overflow: hidden;
+		box-shadow: 0 0 6px rgba(0,0,0,.5) ;
 	}
 
 	.galeria img{
 		width: 100%;
+		vertical-align: top;
+		height: 300px;
+		object-fit: cover;
+		transition: transform .5s;
+	}
+
+	.galeria a:hover img{
+		filter: blur(2px);
+		transform: rotate(10deg) scale(1.3);
 	}
 
 /*-------------------------------------
