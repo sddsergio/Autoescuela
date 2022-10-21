@@ -664,7 +664,14 @@ html,body{
     transition: transform 0.9s ease-in-out;
     transform: translateX(500%);
 } */
-
+/* .logoo{
+	background: gray;
+} */
+.logoo img{
+	width: 40px;
+	justify-content: center;
+	margin-bottom: 5px;
+}
 h1{
     font-weight: 400;
     text-align: center;
@@ -685,6 +692,8 @@ h1{
     width: 95%;
     margin: auto;
     grid-gap: 10px;
+	margin-top: 30px;	
+
 }
 
 .galeria > a{
