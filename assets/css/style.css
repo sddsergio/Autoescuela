@@ -757,11 +757,10 @@ h1{
 	text-align: center;
 }
 
-@media screen and{ (max-width: 400px;)
+@media screen and (max-width:400px){
 	.galeria{
 		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-	}
-}
+	}}
 
 /*-------------------------------------
 		6. Service
