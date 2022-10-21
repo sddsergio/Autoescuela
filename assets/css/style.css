@@ -647,76 +647,121 @@ html,body{
 	height: 100%;
 	z-index: -1;
 }
+
 /*------------------------------------- 
 		5.5 Galeria 
 --------------------------------------*/
-	#boton{
-		width: 50px;
-		height: 50px;
-		border-radius: 50%;
-		color: green;
-		background-color: #100010;
-		transition: transform 0.9s ease-in-out;
-	}
+/* #boton{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: green;
+    background-color: #100010;
+    transition: transform 0.9s ease-in-out;
+}
 
-	#boton:target{
-		transition: transform 0.9s ease-in-out;
-		transform: translateX(500%);
-	}
+#boton:target{
+    transition: transform 0.9s ease-in-out;
+    transform: translateX(500%);
+} */
 
-	h1{
-		font-weight: 400;
-		text-align: center;
-		padding: 20px 0;
-		font-size: 40px;
-	}
+h1{
+    font-weight: 400;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 40px;
+}
 
-	.linea{
-		background: #550b55;
-		height: 5px;
-		width: 100%;
-		display: block;
-	}
-	
+.linea{
+    background: #550b55;
+    height: 5px;
+    width: 100%;
+    display: block;
+}
+
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)) ;
+    width: 95%;
+    margin: auto;
+    grid-gap: 10px;
+}
+
+.galeria > a{
+	display: block;
+	position: relative;
+	overflow: hidden;
+	box-shadow: 0,0,6px rgba(0, 0, 0, .5);
+}
+
+.galeria img{
+	width: 100%;
+	vertical-align: top;
+	height: 300px;
+	object-fit: cover;
+	transition: transform 0.5s;
+}
+
+.galeria a:hover img{
+	filter: blur(1px);
+	transform: rotate(10deg) scale(1.3)
+}
+
+.light-box{
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, .5);
+	transition: tranform .3s ease-in-out;
+	width: 100%;
+	height: 100vh;
+	z-index: 1000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transform: scale(0);
+}
+
+.light-box img{
+	width: 75vw;
+	max-height: 70vh;
+}
+
+.light-box:target{
+	transform: scale(1);
+}
+
+.close{
+	display: block;
+	position: absolute;
+	top: 40px;
+	right: 40px;
+	background: #851919;
+	color: #fff;
+	text-decoration: none;
+	width: 40px;
+	height: 40ox;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+}
+
+.next{
+	display: block;
+	background: #851919;
+	color: #fff;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	text-decoration: none;
+	text-align: center;
+}
+
+@media screen and{ (max-width: 400px;)
 	.galeria{
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)) ;
-		width: 95%;
-		margin: auto;
-		grid-gap: 10px;
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 	}
-
-	.galeria > a{
-		display: block;
-		position: relative;
-		overflow: hidden;
-		box-shadow: 0 0 6px rgba(0,0,0,.5) ;
-	}
-
-	.galeria img{
-		width: 100%;
-		vertical-align: top;
-		height: 300px;
-		object-fit: cover;
-		transition: transform .5s;
-	}
-
-	.galeria a:hover img{
-		filter: blur(2px);
-		transform: rotate(10deg) scale(1.3);
-	}
-
-	.ligth-box{
-		position: fixed;
-		top: 0%;
-		left: 0%;
-		background: rgba(0,0,0,.5);
-		width: 100%;
-		z-index: 1000;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
+}
 
 /*-------------------------------------
 		6. Service
